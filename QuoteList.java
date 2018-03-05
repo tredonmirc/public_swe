@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.jar.JarEntry;
 
 /**
  * List of all the quotes.
@@ -76,6 +77,19 @@ public class QuoteList
       return returnQuote;
    }
 
+   public QuoteList searchForKeyword (String searchString)
+   {
+      QuoteList returnQuote = new QuoteList();
+      Quote quote;
+      for (int i = 0; i < quoteArray.size(); i++)
+      {
+         quote = quoteArray.get (i);
+         if (quote.keywordLocation(searchString) != -1) {
+            returnQuote.setQuote(quote);
+         }
+      }
+      return returnQuote;
+   }
    /**
     * Retuen a random quote object from the list.
     * @return a random Quote

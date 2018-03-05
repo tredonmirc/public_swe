@@ -122,7 +122,6 @@ public class keywordTester {
 		assertEquals("tell", quote1.getKeywords().get(0));  //the first keyword is now "tell"
 	}
 	
-	/*
 	//searches all quotes to see how many user requested keywords are found
 	//this one results in no key words being found
 	//returns a quoteList of size 0
@@ -132,16 +131,17 @@ public class keywordTester {
 		quote3.addKeyword("problem");
 		quote4.addKeyword("right");
 		quote4.addKeyword("take");
-		quote4.addKeyWord("you");
+		quote4.addKeyword("you");
 		
 		//quote1 keywords: "tell", "you"
 		//quote2 keywords:  N/A
 		//quote3 keywords: "problem"
 		//quote4 keywords: "right", "take", "you"
 		
-		assertEquals(0, (quoteList().searchForKeyWord("hi")).getSize());
+		assertEquals(0, (quoteList.searchForKeyword("hi")).getSize());
 	}
 	
+	/*
 	//searches all quotes to find a keyword
 	//one quote is found
 	//returns quoteList containing that one quote

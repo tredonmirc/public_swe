@@ -48,6 +48,10 @@ public class Quote
       this.quoteText = quoteText;
    }
 
+   public int keywordLocation(String keyword) {
+       return (keywords.indexOf(keyword));
+   }
+
    // Getter for keywords
    public ArrayList<String> getKeywords() {
        //String vals = String.join(", ",this.keywords);
