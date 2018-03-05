@@ -13,10 +13,13 @@ class CliQuoteServe {
         //Test Quote to add
         Quote test = new Quote();
         test.setAuthor("Tor Fredericks");
-        test.setQuoteText("This shit better work");
+        test.setQuoteText("This better work");
         QuoteList testList = new QuoteList();
         testList.setQuote(test);
+    }
 
+    public QuoteList getQuoteList() {
+        return (quotelist);
     }
 
 

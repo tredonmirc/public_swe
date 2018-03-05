@@ -49,7 +49,7 @@ public class Quote
    }
 
    public int keywordLocation(String keyword) {
-       return (keywords.indexOf(keyword));
+       return (keywords.indexOf(keyword.toLowerCase()));
    }
 
    // Getter for keywords
@@ -68,19 +68,21 @@ public class Quote
        return (Boolean.FALSE);
    }
 
-   public void addKeyword(String new_keyword) {
+   public Boolean addKeyword(String new_keyword) {
       if (new_keyword != null &&
               !new_keyword.equals("") &&
               !keywords.contains(new_keyword.toLowerCase())
               ) {
           this.keywords.add(new_keyword.toLowerCase());
+          return Boolean.TRUE;
           //System.out.println("Added keyword: "+new_keyword+"| "+this.keywords.toString()+"| Totals: "+this.keywords.size());
       }
+      return Boolean.FALSE;
    }
 
    @Override
    public String toString ()
    {
-      return "Quote {" + "author='" + author + '\'' + ", quoteText='" + quoteText + '\'' + '}';
+      return "Quote {" + "author='" + author + '\'' + ", quoteText='" + quoteText + '\'' +", keywords="+keywords.toString()+"}";
    }
 }

@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Menu {
 
 	static Scanner in = new Scanner(System.in);
+	static CliQuoteServe wrapper;
+	static QuoteList ql;
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to the Quotes Server");
@@ -12,11 +14,12 @@ public class Menu {
 
 	private static void menu() {
 
-		CliQuoteServe wrapper = new CliQuoteServe();
+		wrapper = new CliQuoteServe();
+		ql = wrapper.getQuoteList();
 		int input = 0;
-		while (input != 4) {
+		while (input != 6) {
 			System.out.println("Please pick an option: \n" + "1. Get a random Quote \n" + "2. Search for a Quote \n"
-					+ "3. Add a new Quote \n" + "4. Exit");
+					+ "3. Add a new Quote \n" + "4. Add Keyword to Quote\n" + "5. Search for quote by keyword \n" + "6. Exit");
 
 			try {
 				input = Integer.parseInt(in.nextLine());
@@ -34,21 +37,73 @@ public class Menu {
 			} else if (input == 2) {
 				searchMenu();
 			} else if (input == 3) {
-				
 				addQuotes();
-
-				
 			} else if (input == 4) {
-				System.out.println("Goodbye! Come back agian");
+				addKeyword();
+			} else if (input == 5) {
+				keywordSearch();
+			} else if (input == 6) {
+				System.out.println("Goodbye! Come back again");
 			} else {
 				System.out.println("That is not a valid option. Please choose again");
 			}
 		}
 	}
 
+	/*Search existing lists for keywords
+	 */
+	public static void keywordSearch() {
+		System.out.println("What keyword would you like to search for?");
+		String word = in.nextLine();
+		QuoteList withKeyword = ql.searchForKeyword(word);
+		if (withKeyword.getSize() == 0) {
+			System.out.println("No matches found");
+		} else {
+			System.out.println("Quotes with matching keywords:");
+			for (int i=0;i<withKeyword.getSize();i++) {
+				System.out.println(withKeyword.getQuote(i).toString());
+			}
+		}
+	}
+
+	/* Add a keyword to an existing quote in our list
+	   If the quote list is empty, do nothing.  Otherwise add the keyword to the quote
+	 */
+	public static void addKeyword() {
+		System.out.println("These are the current quotes");
+		int ql_size = ql.getSize();
+		if (ql_size == 0) {
+			System.out.println("There are no quotes, please add one first");
+		}
+		else {
+			for (int i = 0; i < ql_size; i++) {
+				System.out.println(i + ": " + ql.getQuote(i).toString());
+			}
+			System.out.println(ql_size+": Nevermind, I changed my mind");
+			System.out.print("Which quote would you like to add a keyword too: ");
+			int input = 0;
+			try {
+				input = Integer.parseInt(in.nextLine());
+			} catch (Exception e) {
+				System.out.println("Invalid Entry: Please select a number from the list");
+			}
+			if (input == ql_size) {
+				return;
+			}
+			System.out.print("Enter Keyword: ");
+			String new_word = in.nextLine();
+			if (ql.getQuote(input).addKeyword(new_word)) {
+				System.out.println("Keyword added successfully");
+				System.out.println(ql.getQuote(input).toString());
+			} else {
+				System.out.println("Keyword not added: duplicate or invalid");
+			}
+		}
+
+	}
+
 	private static void searchMenu() {
 
-		CliQuoteServe wrapper2 = new CliQuoteServe();
 		int input = 0;
 		while (input != 4) {
 			System.out.println("Please pick an option: \n" + "1. Search by author \n" + "2. Search by quote \n"
@@ -64,7 +119,7 @@ public class Menu {
 			if (adjusted == 0 || adjusted == 1 || adjusted == 2) {
 				System.out.println("What would you like to search for: ");
 				String phrase = in.nextLine();
-				String[] array = wrapper2.searchQuote(phrase, adjusted);
+				String[] array = wrapper.searchQuote(phrase, adjusted);
 				if (array.length == 0) {
 					System.out.println("No quote found");
 				} else {
@@ -79,7 +134,6 @@ public class Menu {
 	}
 
 	private static void addQuotes() {
-		QuoteList ql;
 		int input = 1;
 
 		while (input == 1) {
@@ -90,13 +144,11 @@ public class Menu {
 			
 			//if false returned, than quote or author is null or empty 
 			quoteCheck qc = new quoteCheck(); 
-			CliQuoteServe wrapper3 = new CliQuoteServe();
-			ql = new QuoteList();
-		
+
 			if (qc.check(author, quote) == false) {
 				System.out.println("Entry is invalid");
 			} else {
-				if (wrapper3.exactQuote(quote, author) == true) {
+				if (wrapper.exactQuote(quote, author) == true) {
 					System.out.println("Quote Already Exists");
 				} else {
 					Quote q = new Quote();
