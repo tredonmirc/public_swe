@@ -45,15 +45,15 @@ public class keywordTester {
 	//one key word added to quote1
 	@Test
 	public void add_keyword_1_added(){
-		quote1.addKeyword("work");
+        quote1.addKeyword("work");
 		assertEquals(1, quote1.getKeywords().size());     //one element was added, size should be 1
 		assertEquals("work", quote1.getKeywords().get(0));  //the first keyword = "work"
 	}
 	
-    /*
 	//one more key word added to quote1
 	@Test
 	public void add_keyword_multi_added(){
+        quote1.addKeyword("work");
 		quote1.addKeyword("tell");
 		
 		assertEquals(2, quote1.getKeywords().size());     //one element was added, size should be 1
@@ -61,6 +61,7 @@ public class keywordTester {
 		assertEquals("tell", quote1.getKeywords().get(1));  //the first keyword = "tell"
 	}
 	
+    /*
 	//"tell" readded to quote1
 	//should not change anything in quote
 	@Test
