@@ -82,18 +82,18 @@ public class keywordTester {
 
         assertEquals(1, quote1.getKeywords().size());
     }
-    /*
+
 	//a word that is not present in the list is trying to be deleted
 	//should not affect the list at all
 	@Test
 	public void delete_element_not_found(){
-		quote1.deleteKeyWord("hi");
-		
-		assertEquals(2, quote1.getKeywords().size());    
-		assertEquals("work", quote1.getKeywords().get(0));  //the first keyword = "work"
-		assertEquals("tell", quote1.getKeywords().get(1));  //the first keyword = "tell"
+        quote1.addKeyword("work");
+        quote1.addKeyword("tell");
+
+		assertEquals(Boolean.FALSE, quote1.deleteKeyword("hi"));
 	}
 	
+    /*
 	//tries deleting from an empty keyword list
 	//returns empty list
 	@Test

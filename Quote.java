@@ -55,6 +55,15 @@ public class Quote
       return (this.keywords);
    }
 
+   public Boolean deleteKeyword(String keyword) {
+       int location;
+       if ((location = keywords.indexOf(keyword.toLowerCase())) != -1) {
+           keywords.remove(location);
+           return Boolean.TRUE;
+       }
+       return (Boolean.FALSE);
+   }
+
    public void addKeyword(String new_keyword) {
       if (new_keyword != null &&
               !new_keyword.equals("") &&
