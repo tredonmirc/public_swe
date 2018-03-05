@@ -141,46 +141,60 @@ public class keywordTester {
 		assertEquals(0, (quoteList.searchForKeyword("hi")).getSize());
 	}
 	
-	/*
 	//searches all quotes to find a keyword
 	//one quote is found
 	//returns quoteList containing that one quote
 	@Test
 	public void search_keyword_one_found(){
-		
-		assertEquals(1, (quoteList().searchForKeyWord("problem")).getSize());
+        quote1.addKeyword("you");
+        quote3.addKeyword("problem");
+        quote4.addKeyword("right");
+        quote4.addKeyword("take");
+        quote4.addKeyword("you");
+		assertEquals(1, (quoteList.searchForKeyword("problem")).getSize());
 		
 		//searches for keyword "problem" in quoteList.
 		//returns a quoteList containing 1 quote.
 		//compares the quote from index 0 of that quoteList to appropriate quote
 		
-		assertEquals(quote3.toString(), quoteList().searchForKeyWord("problem").getQuote(0).toString());
+		assertEquals(quote3.toString(), quoteList.searchForKeyword("problem").getQuote(0).toString());
 	}
-	
+
+
 	//multiple quotes containing that keyword found 
 	@Test
 	public void search_keyword_multi_found(){
+        quote1.addKeyword("you");
+        quote3.addKeyword("problem");
+        quote4.addKeyword("right");
+        quote4.addKeyword("take");
+        quote4.addKeyword("you");
+
+		assertEquals(2, (quoteList.searchForKeyword("you")).getSize());
 		
-		assertEquals(2, (quoteList().searchForKeyWord("you")).getSize());
-		
-		assertEquals(quote1.toString(), quoteList().searchForKeyWord("you").getQuote(0).toString());
-		assertEquals(quote4.toString(), quoteList().searchForKeyWord("you").getQuote(1).toString());
+		assertEquals(quote1.toString(), quoteList.searchForKeyword("you").getQuote(0).toString());
+		assertEquals(quote4.toString(), quoteList.searchForKeyword("you").getQuote(1).toString());
 	}
 
 	//quote has no keywords
 	//returns nothing
 	@Test
 	public void retrieve_no_keyword_from_quote(){
-		
-		assertEquals(0, quote2.getKeyWords().getSize());
+
+		assertEquals(0, quote2.getKeywords().size());
 	}
 	
 	//quote has one keywords
 	//returns list containing that one keyword
 	@Test
 	public void retrieve_one_keyword_from_quote(){
-		
-		assertEquals(1, quote3.getKeywords().getSize());
+        quote1.addKeyword("you");
+        quote3.addKeyword("problem");
+        quote4.addKeyword("right");
+        quote4.addKeyword("take");
+        quote4.addKeyword("you");
+
+        assertEquals(1, quote3.getKeywords().size());
 		
 		assertEquals("problem", quote3.getKeywords().get(0));
 	}
@@ -189,14 +203,18 @@ public class keywordTester {
 	//returns list containing all those keywords
 	@Test
 	public void retrieve_multi_keyword_from_quote(){
+        quote1.addKeyword("you");
+        quote3.addKeyword("problem");
+        quote4.addKeyword("right");
+        quote4.addKeyword("take");
+        quote4.addKeyword("you");
 		//quote4 keywords: "right", "take", "you"
 		
-		assertEquals(3, quote4.getKeywords().getSize());
+		assertEquals(3, quote4.getKeywords().size());
 		
 		assertEquals("right", quote4.getKeywords().get(0));
 		assertEquals("take", quote4.getKeywords().get(1));
 		assertEquals("you", quote4.getKeywords().get(2));
 		
 	}
-    */
 }
