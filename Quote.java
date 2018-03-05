@@ -58,9 +58,9 @@ public class Quote
    public void addKeyword(String new_keyword) {
       if (new_keyword != null &&
               !new_keyword.equals("") &&
-              !keywords.contains(new_keyword)
+              !keywords.contains(new_keyword.toLowerCase())
               ) {
-          this.keywords.add(new_keyword);
+          this.keywords.add(new_keyword.toLowerCase());
           //System.out.println("Added keyword: "+new_keyword+"| "+this.keywords.toString()+"| Totals: "+this.keywords.size());
       }
    }

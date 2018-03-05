@@ -74,6 +74,14 @@ public class keywordTester {
 		assertEquals("tell", quote1.getKeywords().get(1));  //the first keyword = "tell"
 	}
 
+    //should not change anything in quote
+    @Test
+    public void add_same_with_different_case_keyword(){
+        quote1.addKeyword("Tell");
+        quote1.addKeyword("tell");
+
+        assertEquals(1, quote1.getKeywords().size());
+    }
     /*
 	//a word that is not present in the list is trying to be deleted
 	//should not affect the list at all
