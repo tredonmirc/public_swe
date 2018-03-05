@@ -1,10 +1,5 @@
 import static org.junit.Assert.*;
-
-import java.util.ArrayList;
-
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.Assert.*;
 
 
 public class keywordTester {
@@ -50,7 +45,7 @@ public class keywordTester {
 	public void initial_setup(){
 		assertEquals(0, quote1().getKeywords().size());      //size of arraylist keywords should be 0
 	}
-	
+    /*
 	//empty string was added/null was added, nothing returned
 	@Test
 	public void add_keyword_none_added(){
@@ -86,7 +81,7 @@ public class keywordTester {
 		quote1().addKeyword("tell");
 		
 		assertEquals(2, quote1().getKeywords().size());    
-		assertEquals("work", quote1().getKeywords)().get(0));  //the first keyword = "work"
+		assertEquals("work", quote1().getKeywords().get(0));  //the first keyword = "work"
 		assertEquals("tell", quote1().getKeywords().get(1));  //the first keyword = "tell"
 	}
 
@@ -205,5 +200,5 @@ public class keywordTester {
 		assertEquals("you", quote4().getKeywords().get(2));
 		
 	}
-
+    */
 }

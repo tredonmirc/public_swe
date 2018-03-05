@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Quote data object.
  * @author Mongkoldech Rajapakdee & Jeff offutt
@@ -9,10 +11,12 @@ public class Quote
 {
    private String author;
    private String quoteText;
+   private ArrayList<String> keywords;
 
    // Default constructor does nothing
    public Quote ()
    {
+      this.keywords = new ArrayList<>();
    }
 
    // Constructor that assigns both strings
@@ -20,6 +24,7 @@ public class Quote
    {
       this.author = author;
       this.quoteText = quoteText;
+      this.keywords = new ArrayList<>();
    }
 
    // Getter and setter for author
@@ -40,6 +45,16 @@ public class Quote
    public void setQuoteText (String quoteText)
    {
       this.quoteText = quoteText;
+   }
+
+   // Getter for keywords
+   public ArrayList<String> getKeywords() {
+      return keywords;
+   }
+
+   public void addKeyword(String new_keyword) {
+      if (new_keyword != null && new_keyword != "")
+         keywords.add(new_keyword);
    }
 
    @Override
