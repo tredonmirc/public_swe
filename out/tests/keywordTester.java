@@ -93,36 +93,36 @@ public class keywordTester {
 		assertEquals(Boolean.FALSE, quote1.deleteKeyword("hi"));
 	}
 	
-    /*
 	//tries deleting from an empty keyword list
 	//returns empty list
 	@Test
 	public void delete_on_empty(){
-		quote2.deleteKeyWord("work");
-		
-		assertEquals(0, quote2.getKeywords().size());   
+		assertEquals(Boolean.FALSE, quote2.deleteKeyword("work"));
 	}
-	
-	
+
+
 	//deletes keyword from a list containing only one element
 	//returns empty list
 	@Test
 	public void delete_on_single(){
 		quote3.addKeyword("problem");
 		
-		quote3.deleteKeyWord("problem");
+		assertEquals(Boolean.TRUE, quote3.deleteKeyword("problem"));
 		assertEquals(0, quote1.getKeywords().size());  //the size of the list after "problem" was deleted should be 0
 	}
 	
 	//deletes an element from a list that has more than 1 element
 	@Test
 	public void delete_on_multiple(){
-		quote1.deleteKeyWord("work");
-		
-		assertEquals(1, quote1.getKeywords.size());    
+        quote1.addKeyword("tell");
+        quote1.addKeyword("work");
+
+        assertEquals(Boolean.TRUE, quote1.deleteKeyword("work"));
+		assertEquals(1, quote1.getKeywords().size());
 		assertEquals("tell", quote1.getKeywords().get(0));  //the first keyword is now "tell"
 	}
 	
+	/*
 	//searches all quotes to see how many user requested keywords are found
 	//this one results in no key words being found
 	//returns a quoteList of size 0

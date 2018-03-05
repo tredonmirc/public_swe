@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca611daa-faa4-42fa-af18-1087703a0c7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Quote.java" afterPath="$PROJECT_DIR$/Quote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/tests/keywordTester.java" afterPath="$PROJECT_DIR$/out/tests/keywordTester.java" />
-    </list>
+    <list default="true" id="ca611daa-faa4-42fa-af18-1087703a0c7d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,9 +16,11 @@
         <entry file="file://$PROJECT_DIR$/out/tests/keywordTester.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3330#3331#0" expanded="true" />
+                <element signature="e#3394#3395#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,7 +29,7 @@
       <file leaf-file-name="Quote.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Quote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="558">
               <caret line="59" column="7" lean-forward="false" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -67,8 +65,8 @@
       <list>
         <option value="$PROJECT_DIR$/cal-assn5/CalTester.java" />
         <option value="$PROJECT_DIR$/quoteserve.java" />
-        <option value="$PROJECT_DIR$/out/tests/keywordTester.java" />
         <option value="$PROJECT_DIR$/Quote.java" />
+        <option value="$PROJECT_DIR$/out/tests/keywordTester.java" />
       </list>
     </option>
   </component>
@@ -299,7 +297,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520255057713</updated>
-      <workItem from="1520255059584" duration="8981000" />
+      <workItem from="1520255059584" duration="9332000" />
     </task>
     <servers />
   </component>
@@ -309,7 +307,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8981000" />
+    <option name="totallyTimeSpent" value="9332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="27" width="960" height="1053" extended-state="4" />
@@ -395,7 +393,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Quote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="558">
           <caret line="59" column="7" lean-forward="false" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -408,9 +406,11 @@
     <entry file="file://$PROJECT_DIR$/out/tests/keywordTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3330#3331#0" expanded="true" />
+            <element signature="e#3394#3395#0" expanded="true" />
           </folding>
         </state>
       </provider>
