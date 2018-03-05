@@ -56,7 +56,10 @@ public class Quote
    }
 
    public void addKeyword(String new_keyword) {
-      if (new_keyword != null && !new_keyword.equals("")) {
+      if (new_keyword != null &&
+              !new_keyword.equals("") &&
+              !keywords.contains(new_keyword)
+              ) {
           this.keywords.add(new_keyword);
           //System.out.println("Added keyword: "+new_keyword+"| "+this.keywords.toString()+"| Totals: "+this.keywords.size());
       }

@@ -61,11 +61,12 @@ public class keywordTester {
 		assertEquals("tell", quote1.getKeywords().get(1));  //the first keyword = "tell"
 	}
 	
-    /*
 	//"tell" readded to quote1
 	//should not change anything in quote
 	@Test
 	public void add_same_keyword(){
+        quote1.addKeyword("work");
+        quote1.addKeyword("tell");
 		quote1.addKeyword("tell");
 		
 		assertEquals(2, quote1.getKeywords().size());    
@@ -73,6 +74,7 @@ public class keywordTester {
 		assertEquals("tell", quote1.getKeywords().get(1));  //the first keyword = "tell"
 	}
 
+    /*
 	//a word that is not present in the list is trying to be deleted
 	//should not affect the list at all
 	@Test
