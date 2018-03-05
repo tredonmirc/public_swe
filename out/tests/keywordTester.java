@@ -40,7 +40,7 @@ public class keywordTester {
 
 
 
-	//checks initial set up of quote/keyword
+	//checks initial set up of quote/keyword - done
 	@Test
 	public void initial_setup(){
 		assertEquals(0, quote1().getKeywords().size());      //size of arraylist keywords should be 0
@@ -54,7 +54,7 @@ public class keywordTester {
 		quote1().addKeyword(null);
 		assertEquals(0, quote1().getKeywords().size());      //size of arraylist keywords should be 0
 	}
-	
+
 	//one key word added to quote1
 	@Test
 	public void add_keyword_1_added(){
