@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Quote data object.
@@ -49,12 +50,16 @@ public class Quote
 
    // Getter for keywords
    public ArrayList<String> getKeywords() {
-      return keywords;
+       //String vals = String.join(", ",this.keywords);
+       //System.out.println("Keywords: "+vals + " count: "+this.keywords.size());
+      return (this.keywords);
    }
 
    public void addKeyword(String new_keyword) {
-      if (new_keyword != null && new_keyword != "")
-         keywords.add(new_keyword);
+      if (new_keyword != null && !new_keyword.equals("")) {
+          this.keywords.add(new_keyword);
+          //System.out.println("Added keyword: "+new_keyword+"| "+this.keywords.toString()+"| Totals: "+this.keywords.size());
+      }
    }
 
    @Override
