@@ -1,0 +1,88 @@
+commit b00e6ef55e273a5c0d40d9caf401d02e7a85b1c6
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 14:16:53 2018 -0500
+
+    Update Menu & Classes to suport add/search keyword - no save func
+
+commit 5826f57771c4d3cac4a0ddf9d85ce9fe858df4e2
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 12:41:29 2018 -0500
+
+    Update Tests Ensure All Tests Pass
+
+commit 614e959400a7f092435219024009557aaa574251
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 11:38:04 2018 -0500
+
+    Add search for keywords to QuoteList & Pass search_for_not_present
+
+commit c6ca51f6843c90d2f324be676eae763d6e320467
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 10:40:23 2018 -0500
+
+    Refactor Delete Tests & Pass delete on single & multiple
+
+commit 65454e64c63dbb154469a6d3fecb50c785302ecf
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 10:34:20 2018 -0500
+
+    Add deleteKeyword & PASS Test delete_element_not_found
+
+commit 979e2973842d0c8bc07f9cb2b5230cba8e10219d
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 10:16:29 2018 -0500
+
+    Update addKeyword to ignore case & Pass Test 6
+
+commit 20e27ec8b6a249fbdf605549608f629a20b29b97
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 10:09:38 2018 -0500
+
+    Update addKeyword && Pass Test #5
+
+commit 21ce4c83284eafc40b3b00073a4235bcccc7bd5e
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 10:06:44 2018 -0500
+
+    Update Test 4 & Pass Test #4
+
+commit ee595e00c7a237b7ea44a4b0270d152386b55a56
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 10:03:10 2018 -0500
+
+    Before refactor
+
+commit d4221a4932aeae95de62627b56dd741a0479ec2d
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 09:51:50 2018 -0500
+
+    Pass Test #3
+
+commit e8d73e4885e3b79b15b0282afe2dfb549dcbe6e3
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 09:13:21 2018 -0500
+
+    Pass Test #2
+
+commit 6b472ee0a7c2273ea322bce4631c69b74879bf74
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 09:12:34 2018 -0500
+
+    Pass Test #1
+
+commit 8e6e38f058e73ac5fb413c3a508a323eeeac121f
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 08:55:39 2018 -0500
+
+    Further setup for Assn 6
+
+commit 41ed4aead6b8f00a1ed601abafa49e13afc4b696
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Mar 5 08:33:48 2018 -0500
+
+    Setting up JUNIT with IntelliJ
+
+commit 838129921b06112cf6a5621403fb9b6c30101387
+Author: Tor Fredericks <tfreder4@masonlive.gmu.edu>
+Date:   Mon Feb 26 16:13:15 2018 -0500
+
