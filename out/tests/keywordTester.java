@@ -45,7 +45,6 @@ public class keywordTester {
 	public void initial_setup(){
 		assertEquals(0, quote1().getKeywords().size());      //size of arraylist keywords should be 0
 	}
-    /*
 	//empty string was added/null was added, nothing returned
 	@Test
 	public void add_keyword_none_added(){
@@ -55,6 +54,7 @@ public class keywordTester {
 		assertEquals(0, quote1().getKeywords().size());      //size of arraylist keywords should be 0
 	}
 
+    /*
 	//one key word added to quote1
 	@Test
 	public void add_keyword_1_added(){
