@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca611daa-faa4-42fa-af18-1087703a0c7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Quote.java" afterPath="$PROJECT_DIR$/Quote.java" />
-    </list>
+    <list default="true" id="ca611daa-faa4-42fa-af18-1087703a0c7d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="keywordTester.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="keywordTester.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/out/tests/keywordTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quote.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Quote.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Quote.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -65,8 +63,8 @@
       <list>
         <option value="$PROJECT_DIR$/cal-assn5/CalTester.java" />
         <option value="$PROJECT_DIR$/quoteserve.java" />
-        <option value="$PROJECT_DIR$/out/tests/keywordTester.java" />
         <option value="$PROJECT_DIR$/Quote.java" />
+        <option value="$PROJECT_DIR$/out/tests/keywordTester.java" />
       </list>
     </option>
   </component>
@@ -297,7 +295,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520255057713</updated>
-      <workItem from="1520255059584" duration="6428000" />
+      <workItem from="1520255059584" duration="7115000" />
     </task>
     <servers />
   </component>
@@ -307,7 +305,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6428000" />
+    <option name="totallyTimeSpent" value="7115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="27" width="960" height="1053" extended-state="4" />
@@ -391,16 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/tests/keywordTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Quote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -409,6 +397,16 @@
             <element signature="imports" expanded="true" />
             <element signature="e#462#463#0" expanded="true" />
             <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/tests/keywordTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

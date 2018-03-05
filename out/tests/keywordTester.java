@@ -14,6 +14,7 @@ public class keywordTester {
 		
 	}
 
+	// Refactor initalization of Quotes & QuoteList
 	@Before
     public void initQuotes() {
         quote1 = new Quote("Joseph Addison", "Don't tell me how hard you work. Tell me how much you get done.");
